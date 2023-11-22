@@ -23,13 +23,14 @@ export default defineManifest({
   },
   content_scripts: [
     {
-      matches: [],
+      matches: ["<all_urls>"],
       js: ["src/content/contentScript.jsx"],
     },
   ],
   web_accessible_resources: [
     {
       resources: ["img/*"],
+      matches: ["<all_urls>"],
     },
   ],
   permissions: ["activeTab"],

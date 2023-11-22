@@ -1,5 +1,4 @@
 import "./Popup.css";
-
 export const Popup = () => {
   return (
     <main className="popup">
